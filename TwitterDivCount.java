@@ -1,6 +1,7 @@
 package scripts;
 
 import org.testng.annotations.Test;
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -16,27 +17,25 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 
-//Adding comments demo of files modified after commit.
-
-public class GoogleLinks {
+public class TwitterDivCount {
 	WebDriver driver;
 	
 	@BeforeClass
 	public void beforeClass()
 	{
-		driver = new ChromeDriver();
+		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 	}
 	
   @Test
   public void loginToNicheTourism() throws InterruptedException {
-	driver.get("https://www.google.com");   
-	List<WebElement> allGoogleLinks = driver.findElements(By.xpath("//a"));
-	System.out.println("Total Links on Google.com are -" + allGoogleLinks.size());
+	driver.get("https://www.twitter.com");   
+	List<WebElement> allDivElements = driver.findElements(By.xpath("//div"));
+	System.out.println("Total Div elements on Twitter.com are -" + allDivElements.size());
 	 
-	for (WebElement oneElement: allGoogleLinks) {
-		System.out.println(oneElement.getText() + " - " +oneElement.getAttribute("href"));
-		 //Thread.sleep(3000);
+	for (WebElement oneElement: allDivElements) {
+		System.out.println(oneElement.getText() + " - " +oneElement.getAttribute("div"));
+		
 	}
   }
   
