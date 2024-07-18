@@ -17,7 +17,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 
-//change and will be staged before commiting.
+//change and will be staged before commiting..
 
 public class HandlingWebElements {
 	WebDriver driver;
