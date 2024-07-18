@@ -18,7 +18,7 @@ import org.testng.annotations.AfterClass;
 
 //Adding comments demo of files modified after commit.
 
-public class GoogleLinks {
+public class GoogleLinksFromMainBranch {
 	WebDriver driver;
 	
 	@BeforeClass
