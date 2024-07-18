@@ -19,6 +19,7 @@ import org.testng.annotations.AfterClass;
 
 //Added a comment after staging
 //Add comment in a file
+//Changes made for assignment.
 
 public class TwitterDivCount {
 	WebDriver driver;
